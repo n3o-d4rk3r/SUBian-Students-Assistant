@@ -20,21 +20,26 @@ SUBian is an Android application aimed to be a one stop helper for all the depar
 * Edit your profile later after sign up.
 * Search & find your department student.
 
+##### 3. Study
+* Students contact with their CR.
+* Reading PDF book, programming book, competive programming help etc.
+
 ##### 3. Moodule
 * Student download faculty resource file.
 * Download any file from moodule.
 
 ##### 4. Ui
 * Built with the latest Material Design Components.
+* User Friendly User Interface
+* Fully Responsive Design.
 * Lottie animations.
 
 ### Libraries:
+SUBian uses a number of open source projects to work properly, You can find the libraries list in app/build.gradle .
 
-Karma uses a number of open source projects to work properly, You can find the libraries list in app/build.gradle .
+### Want to build your SUBian app?
 
-### Want to build your Karma app?
-
-Just fork/clone the project and add your Firebase new project's google-service.json into /app folder.
+Just fork/clone the project and add your Firebase new project's google-service.json into /app folder and utils/app.java.
 
 ## Contributing:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -42,14 +47,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ### Bugs
-- Chat (Still not available yet).
-- Search (Search works by username only because of firebase's API limitation).
+- Project file upcomming (Still not available yet).
 
 ### Todos
 
- - Add Chat 
+ - Just awesome
  - Add Night Mode
- - Alot of new features
+ - A lot of new features
 
 License
 ----
