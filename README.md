@@ -1,7 +1,7 @@
 # SUBian-Students Assistant
 SUBian is an Android application aimed to be a one stop helper for all the department needs irrespective. It aims to create a helpful platform for all department students. The app uses material UI for an attractive interface (subject to improvement) which attracts the user to stay on the app for more time and is available.
 
-#### [Android Releases (Downloads)](https://github.com/YahiaAngelo/Karma/releases)
+#### [Android Releases (Downloads)](https://github.com/n3o-d4rk3r/SUBian-Students-Assistant)
 
 ![Build Status](https://travis-ci.com/YahiaAngelo/ProjectKarma.svg?token=yFduMLnycQ4NCCzJTete&branch=master)
 [![License](https://img.shields.io/badge/license-GNU-blue.svg)](https://www.gnu.org/licenses/)
