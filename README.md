@@ -20,6 +20,11 @@ SUBian is an Android application aimed to be a one stop helper for all the depar
 * Edit your profile later after sign up.
 * Search & find your department student.
 
+##### 2. Blood Donor
+* Donor profile with Name, Student I'd/Department, contact no, blood group and Profile picture.
+* Search donor, Find Location.
+* Lots of features
+
 ##### 3. Study
 * Students contact with their CR.
 * Reading PDF book, programming book, competive programming help etc.
