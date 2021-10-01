@@ -33,6 +33,7 @@ SUBian is an Android application aimed to be a one stop helper for all the depar
 * User Friendly User Interface
 * Fully Responsive Design.
 * Lottie animations.
+* Unique Materials
 
 ### Libraries:
 SUBian uses a number of open source projects to work properly, You can find the libraries list in app/build.gradle .
