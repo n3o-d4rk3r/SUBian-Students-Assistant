@@ -3,6 +3,9 @@ SUBian is an Android application aimed to be a one stop helper for all the depar
 
 #### [Android Releases (Downloads)](https://github.com/n3o-d4rk3r/SUBian-Students-Assistant)
 
+#### Responsive Icon Pack Use:
+#### [Drawable Resources (Downloads)](https://github.com/n3o-d4rk3r/Android-Responsive-Icon-Pack)
+
 ![Build Status](https://travis-ci.com/YahiaAngelo/ProjectKarma.svg?token=yFduMLnycQ4NCCzJTete&branch=master)
 [![License](https://img.shields.io/badge/license-GNU-blue.svg)](https://www.gnu.org/licenses/)
 
