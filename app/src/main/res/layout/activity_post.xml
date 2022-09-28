@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".community.PostActivity">
+
+    <!-- TODO: Activity post layout Design -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/postId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_below="@+id/post_toolbar"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileCircleImageView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorGrey"
+                android:src="@drawable/user"/>
+
+            <EditText
+                android:id="@+id/frag_post_edt_title"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/ic_grey_box"
+                android:hint="@string/post_title"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextFields" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/added_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_grey_box"
+            android:gravity="top"
+            android:hint="@string/write_your_text"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:lines="4"
+            android:maxHeight="96dp"
+            android:maxLength="140"
+            android:padding="12dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <FrameLayout
+            android:id="@+id/mediaPickerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
+
+            <ImageView
+                android:id="@+id/pickedMedia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/todo" />
+
+            <LinearLayout
+                android:id="@+id/ll_add_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/added_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_circle"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_thumb_pic"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/pickMediaMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/add_msg_pics"
+                    android:textColor="@color/colorDivider" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/added_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_grey_box"
+            android:gravity="top"
+            android:hint="@string/tags"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:lines="1"
+            android:maxHeight="96dp"
+            android:maxLength="140"
+            android:padding="12dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postId"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/progress"
+        android:background="@color/white"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/back_from_post"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_grey_box"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/txt_close"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".08"/>
+
+        <TextView
+            android:id="@+id/post_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_primary_btn"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/post_now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="0.8"
+        android:background="@android:color/black" />
+
+
+
+</RelativeLayout>

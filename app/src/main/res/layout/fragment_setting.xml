@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SettingFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            style="@style/viewParent.headerText"
+            android:text="@string/settings" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0.1dp"
+            android:background="@color/colorView" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorGrey"
+                android:src="@drawable/user"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/viewParent.headerText"
+                android:text="@string/user_name"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/profile"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/profileId"
+                style="@style/viewParent.headerText"
+                android:text="@string/edit_personal_details"
+                android:textSize="16sp"
+                android:textColor="@color/colorGrey"
+                android:layout_below="@id/name"
+                android:layout_toEndOf="@id/profile"/>
+
+            <ImageView
+
+                style="@style/viewParent"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            style="@style/settingsText"
+            android:drawableStart="@drawable/ic_dark_mode"
+            android:text="Dark Mode" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/profile"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0.1dp"
+            android:background="@color/colorView" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:text="@string/edit_profile"
+            app:drawableLeftCompat="@drawable/ic_edit_profile" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_marginTop="10dp"
+            android:text="@string/change_password"
+            app:drawableStartCompat="@drawable/ic_edit_pass" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/push_notification"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0.1dp"
+            android:background="@color/colorView" />
+
+        <Switch
+            style="@style/settingsText"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:text="@string/notifications"/>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/regional"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0.1dp"
+            android:background="@color/colorView" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:text="@string/language"
+            app:drawableLeftCompat="@drawable/ic_language" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:text="@string/logout"
+            app:drawableStartCompat="@drawable/ic_logouts" />
+
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/version_1_0_1"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

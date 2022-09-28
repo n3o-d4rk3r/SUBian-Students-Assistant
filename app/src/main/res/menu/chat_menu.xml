@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item
+        android:icon="@drawable/ic_video"
+        android:title="@string/video_call"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_call"
+        android:title="@string/audio_call"
+        app:showAsAction="ifRoom" />-->
+
+    <item android:id="@+id/profileBtn"
+         android:title="@string/profile" />
+    <item android:id="@+id/reportBtn"
+        android:title="@string/report" />
+
+    <item android:id="@+id/blockBtn"
+        android:iconTint="@color/colorWhite"
+        android:title="@string/block"
+        tools:targetApi="o" />
+</menu>
